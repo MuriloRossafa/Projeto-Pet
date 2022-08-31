@@ -11,6 +11,8 @@
 #container strong {
   font-size: 20px;
   line-height: 26px;
+
+
 }
 
 #container p {
@@ -25,3 +27,24 @@
 #container a {
   text-decoration: none;
 }
+
+.icon {
+  position: relative;
+  width: 200px;
+  margin-left: 30px;
+  margin-top: 50px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+.button{
+  border-radius: 50px;
+}
+
+.background{
+  background-color: #15cae2;
+}
+
+.azul{
+  background-color: #15cae2;
+}
+

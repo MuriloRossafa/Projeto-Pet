@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>teladecadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Como Deseja se Cadastrar?</ion-label>
+    <ion-select placeholder="Escolha Um" [(ngModel)]="tipo">
+      <ion-select-option value="c">Comercio</ion-select-option>
+      <ion-select-option value="p">Cliente</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <div *ngIf="tipo == 'c'">
+    <ion-input placeholder="Nome"></ion-input>
+    <ion-input placeholder="Senha"></ion-input>
+    <ion-input placeholder="Confirmar Senha"></ion-input>
+    <ion-input placeholder="CNPJ"></ion-input>
+    <ion-input placeholder="Nome do Estabelecimento"></ion-input>
+    <ion-input placeholder="Email"></ion-input>
+    <ion-button color="primary" routerLink="/home">Salvar</ion-button>
+    <ion-button color="primary">Cancelar</ion-button>
+
+  </div>
+  <div *ngIf="tipo == 'p'">
+    <ion-input placeholder="Nome"></ion-input>
+    <ion-input placeholder="Senha"></ion-input>
+    <ion-input placeholder="Confirmar Senha"></ion-input>
+    <ion-input placeholder="Email"></ion-input>
+    <ion-button color="primary" routerLink="/home">Salvar</ion-button>
+    <ion-button color="primary">Cancelar</ion-button>
+
+  </div>
+  <div>
+    <div class="icon1">
+      <img src="../../assets/icon/animals.png" alt="" srcset="">
+    </div>
+  </div>
+</ion-content>
